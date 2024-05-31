@@ -1,0 +1,55 @@
+.poppins-medium {
+    -fx-font-family: "Poppins", sans-serif;
+    -fx-font-weight: 600;
+    -fx-font-style: normal;
+
+}
+
+.rekomenButton{
+    -fx-background-color: #277dba;
+    -fx-text-fill: white;
+
+}
+
+.rekomen:hover {
+    -fx-background-color: lightblue;
+}
+
+.Header {
+    -fx-background-color: white;
+}
+
+.body {
+    -fx-background-color: rgb(251, 247, 247);
+}
+
+.login{
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-width: 5px;
+    -fx-background-color: wheat;
+}
+
+.login-btn{
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-width: 5px;
+    -fx-background-color: lightblue;
+}
+
+.changeMouse:hover {
+    -fx-cursor: pointer;
+}
+
+#HboxResepBtn:hover{
+    -fx-background-color: #277dba;
+}
+#HboxRankBtn:hover{
+    -fx-background-color: #277dba;
+}
+#HboxBookmarkBtn:hover{
+    -fx-background-color: #277dba;
+}
+#HboxDashboardBtn:hover{
+    -fx-background-color: #277dba;
+}

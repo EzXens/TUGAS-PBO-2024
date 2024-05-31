@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tugaspbogaleri.pa.HelloController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="82.0" prefWidth="999.0" styleClass="Header" stylesheets="@../../../css/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="txtHomeBtn" alignment="CENTER" prefHeight="104.0" prefWidth="162.0" text="Pinter1st" textFill="#277dba">
+               <font>
+                  <Font name="Futura Md BT Bold" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <TextField prefHeight="35.0" prefWidth="191.0" promptText="Search" style="-fx-background-color: white; -fx-border-color: #277dba; -fx-border-radius: 30px; -fx-background-radius: 30px; -fx-border-width: 2px;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </TextField>
+            <ImageView fitHeight="22.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icon/search.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER" maxHeight="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="298.0" spacing="5.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <children>
+                  <AnchorPane prefHeight="50.0" prefWidth="262.0">
+                     <children>
+                        <HBox fx:id="HboxResepBtn" alignment="CENTER" layoutX="17.0" prefHeight="50.0" prefWidth="86.0" spacing="5.0">
+                           <children>
+                              <Label alignment="TOP_LEFT" prefHeight="22.0" prefWidth="101.0" text="Galeri Anda">
+                                 <font>
+                                    <Font name="Fira Code SemiBold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox fx:id="HboxRankBtn" alignment="CENTER" layoutX="120.0" prefHeight="51.0" prefWidth="92.0" spacing="5.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <children>
+                              <Label alignment="TOP_LEFT" prefHeight="25.0" prefWidth="79.0" text="Top Galeri">
+                                 <font>
+                                    <Font name="Fira Code SemiBold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="HboxBookmarkBtn" alignment="CENTER" layoutX="227.0" prefHeight="50.0" prefWidth="89.0" spacing="5.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <children>
+                              <Label alignment="TOP_LEFT" prefHeight="22.0" prefWidth="103.0" text="Bookmark">
+                                 <font>
+                                    <Font name="Fira Code SemiBold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="HboxDashboardBtn" alignment="CENTER" layoutX="318.0" prefHeight="50.0" prefWidth="97.0" spacing="5.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <children>
+                              <Label alignment="TOP_LEFT" prefHeight="22.0" prefWidth="103.0" text="Dashboard">
+                                 <font>
+                                    <Font name="Fira Code SemiBold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="123.0" prefWidth="278.0">
+               <children>
+                  <AnchorPane prefHeight="123.0" prefWidth="300.0">
+                     <children>
+                        <Button fx:id="btnOpenLogin" alignment="CENTER" contentDisplay="BOTTOM" layoutX="14.0" layoutY="45.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" style="-fx-background-color: #277dba;" text="Login" textFill="WHITE">
+                           <font>
+                              <Font name="Fira Code SemiBold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <ImageView fx:id="imgProfileUser" fitHeight="50.0" fitWidth="50.0" layoutX="162.0" layoutY="37.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../../../../../../../../Users/ashad/OneDrive/Pictures/channels4_profile.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="txtNamaUSer" layoutX="38.0" layoutY="87.0" text="Nama" textFill="#277dba">
+                           <font>
+                              <Font name="Fira Code SemiBold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox fx:id="MainContainer" alignment="TOP_CENTER" styleClass="body" stylesheets="@../../../css/style.css" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <VBox fx:id="VboxLobbyContainer" prefHeight="592.0" prefWidth="784.0">
+               <children>
+                  <AnchorPane prefHeight="576.0" prefWidth="914.0">
+                     <children>
+                        <ImageView fitHeight="318.0" fitWidth="946.0" layoutX="-1.0" layoutY="1.0" opacity="0.57" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../../../../../../../../xampp/htdocs/PA_WEB_A2_K5/assets/waifu-snow.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="21.0" layoutY="120.0" text="WELCOME TO OUR ART GALLERY PINTER1ST" wrapText="true">
+                           <font>
+                              <Font name="Arial Black" size="36.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.41747572815533984">
+                                 <stops>
+                                    <Stop color="#281818" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <HBox alignment="CENTER" layoutY="253.0" prefHeight="69.0" prefWidth="946.0" spacing="30.0">
+                           <children>
+                              <Button fx:id="BtnShowAppetizer" mnemonicParsing="false" prefHeight="38.0" prefWidth="91.0" stylesheets="@../../../css/style.css" text="Artfull">
+                                 <font>
+                                    <Font name="Fira Code SemiBold" size="13.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="rekomenButton" />
+                                    <String fx:value="rekomen" />
+                                 </styleClass>
+                              </Button>
+                              <Button fx:id="BtnShowMain" layoutX="366.0" layoutY="16.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="91.0" stylesheets="@../../../css/style.css" text="Modern">
+                                 <font>
+                                    <Font name="Fira Code SemiBold" size="11.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="rekomenButton" />
+                                    <String fx:value="rekomen" />
+                                 </styleClass>
+                              </Button>
+                              <Button fx:id="BtnShowDessert" layoutX="427.0" layoutY="16.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="91.0" stylesheets="@../../../css/style.css" text="Anime">
+                                 <font>
+                                    <Font name="Fira Code SemiBold" size="13.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="rekomenButton" />
+                                    <String fx:value="rekomen" />
+                                 </styleClass>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <ScrollPane fitToWidth="true" prefHeight="496.0" prefWidth="803.0">
+                     <content>
+                        <HBox fx:id="HboxContainer" prefHeight="587.0" prefWidth="927.0" styleClass="body" stylesheets="@../../../css/style.css">
+                           <children>
+                              <GridPane fx:id="resepContainer">
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </HBox>
+                     </content>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
